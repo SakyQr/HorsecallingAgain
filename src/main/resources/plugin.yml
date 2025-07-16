@@ -1,0 +1,49 @@
+name: HorsecallingAGAIN
+version: 1.0.0
+main: org.SakyQ.horsecallingAGAIN.HorsecallingAGAIN
+api-version: 1.19
+author: SakyQ
+description: RDR2-style horse calling system for Minecraft
+depend: []
+softdepend: []
+
+commands:
+  whistle:
+    description: Whistle to call your claimed horse
+    usage: /whistle
+    permission: horsecalling.whistle
+    permission-message: You don't have permission to whistle for horses!
+
+  tame:
+    description: Get help with taming and claiming horses
+    usage: /tame
+    permission: horsecalling.tame
+    permission-message: You don't have permission to tame horses!
+
+  horseinfo:
+    description: View information about your tamed and claimed horses
+    usage: /horseinfo
+    aliases: [hinfo, myhorses]
+    permission: horsecalling.info
+    permission-message: You don't have permission to view horse information!
+
+permissions:
+  horsecalling.*:
+    description: Gives access to all horse calling features
+    default: true
+    children:
+      horsecalling.whistle: true
+      horsecalling.tame: true
+      horsecalling.info: true
+
+  horsecalling.whistle:
+    description: Allows players to whistle for their horses
+    default: true
+
+  horsecalling.tame:
+    description: Allows players to tame and claim horses
+    default: true
+
+  horsecalling.info:
+    description: Allows players to view horse information
+    default: true

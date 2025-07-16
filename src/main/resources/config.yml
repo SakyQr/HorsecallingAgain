@@ -1,0 +1,57 @@
+# Horse Calling Configuration
+# Distances are in blocks, times are in seconds
+
+horse-calling:
+  # Maximum distance horse can be called from
+  max-call-distance: 75
+
+  # Horse travel speed (blocks per second)
+  horse-speed: 8.0
+
+  # Movement restrictions while horse is coming
+  movement:
+    # Maximum distance player can move from whistle location
+    max-movement-distance: 15.0
+    # Distance at which to show warning
+    warning-distance: 10.0
+    # Whether to enable movement restrictions at all
+    enabled: true
+
+  # Combat settings
+  combat:
+    # How long combat lasts (seconds)
+    duration: 10
+    # Whether combat cancels horse calls
+    cancel-horse-calls: true
+
+  # Underground restrictions
+  underground:
+    # Whether players can call horses while underground
+    allow-underground-calling: false
+    # How many blocks below surface counts as "underground"
+    depth-threshold: 2
+
+  # Sound settings
+  sounds:
+    # Play whistle sound when calling horse
+    whistle-enabled: true
+    # Play horse arrival sound
+    arrival-enabled: true
+    # Play sad sound when horse gets lost
+    lost-enabled: true
+
+  # Action bar messages
+  action-bar:
+    # Show countdown timer in action bar
+    enabled: true
+    # Show movement distance in timer
+    show-movement-distance: true
+
+# Data storage settings
+data:
+  # How often to save data (ticks, 20 = 1 second)
+  auto-save-interval: 1200
+  # Save data when player logs out
+  save-on-logout: true
+  # Maximum horses to save per player
+  max-horses-per-player: 10

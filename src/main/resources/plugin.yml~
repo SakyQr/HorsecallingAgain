@@ -1,0 +1,14 @@
+name: horsecallingAGAIN
+version: '1.0-SNAPSHOT'
+main: org.SakyQ.horsecallingAGAIN.HorsecallingAGAIN
+api-version: '1.21'
+commands:
+  whistle:
+    description: Whistle to call your horse
+    usage: /whistle
+  tame:
+    description: Get help with taming horses
+    usage: /tame
+  horseinfo:
+    description: View information about your horses
+    usage: /horseinfo
