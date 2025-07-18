@@ -75,7 +75,7 @@ The plugin automatically generates a configuration file on first run. Key config
 
 ### Requirements
 - Minecraft Server (Bukkit/Spigot/Paper)
-- Java 8 or higher
+- Java 21
 - Kotlin runtime (included in plugin)
 
 ## Troubleshooting
