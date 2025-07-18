@@ -131,10 +131,6 @@ git clone [repository-url]
 - Added comprehensive logging
 - **Known Issues**: Some features may be unstable - report any bugs found
 
-## License
-
-[Insert your license information here]
-
 ## Support
 
 **BETA SUPPORT**: As this is a beta version, please report any bugs or issues promptly. Include detailed reproduction steps and server logs.
